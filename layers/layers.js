@@ -37,7 +37,7 @@ var lyr_Flood_2 = new ol.layer.Vector({
                 style: style_Flood_2,
                 popuplayertitle: 'Flood',
                 interactive: true,
-                title: '<img src="styles/legend/Flood_2.png" /> Flood'
+                title: '<img src="styles/legend/Flood_2.png" />พื้นที่น้ำท่วม'
             });
 var format_Drought_3 = new ol.format.GeoJSON();
 var features_Drought_3 = format_Drought_3.readFeatures(json_Drought_3, 
@@ -52,7 +52,7 @@ var lyr_Drought_3 = new ol.layer.Vector({
                 style: style_Drought_3,
                 popuplayertitle: 'Drought',
                 interactive: true,
-                title: '<img src="styles/legend/Drought_3.png" /> Drought'
+                title: '<img src="styles/legend/Drought_3.png" /> พื้นที่ภัยแล้ง'
             });
 var format_str_bta_4 = new ol.format.GeoJSON();
 var features_str_bta_4 = format_str_bta_4.readFeatures(json_str_bta_4, 
@@ -67,7 +67,7 @@ var lyr_str_bta_4 = new ol.layer.Vector({
                 style: style_str_bta_4,
                 popuplayertitle: 'str_bta',
                 interactive: true,
-                title: '<img src="styles/legend/str_bta_4.png" /> str_bta'
+                title: '<img src="styles/legend/str_bta_4.png" /> เส้นทางน้ำ'
             });
 var format_lu_bta_5 = new ol.format.GeoJSON();
 var features_lu_bta_5 = format_lu_bta_5.readFeatures(json_lu_bta_5, 
@@ -82,7 +82,7 @@ var lyr_lu_bta_5 = new ol.layer.Vector({
                 style: style_lu_bta_5,
                 popuplayertitle: 'lu_bta',
                 interactive: true,
-    title: 'lu_bta<br />\
+    title: 'การใช้ประโยชน์ที่ดิน<br />\
     <img src="styles/legend/lu_bta_5_0.png" /> A<br />\
     <img src="styles/legend/lu_bta_5_1.png" /> F<br />\
     <img src="styles/legend/lu_bta_5_2.png" /> M<br />\
@@ -101,20 +101,13 @@ var lyr_bdy_bta_6 = new ol.layer.Vector({
                 style: style_bdy_bta_6,
                 popuplayertitle: 'bdy_bta',
                 interactive: true,
-                title: '<img src="styles/legend/bdy_bta_6.png" /> bdy_bta'
+                title: '<img src="styles/legend/bdy_bta_6.png" /> ขอบเขตตำบล'
             });
-var group_MTM = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'MTM'});
-var group_SPM = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'SPM'});
+
 var group_BTA = new ol.layer.Group({
                                 layers: [lyr_Flood_2,lyr_Drought_3,lyr_str_bta_4,lyr_lu_bta_5,lyr_bdy_bta_6,],
                                 fold: 'open',
-                                title: 'BTA'});
+                                title: 'ชั้นข้อมูลทั้งหมด'});
 
 lyr_GoogleMaps_0.setVisible(true);lyr_GoogleSatellite_1.setVisible(true);lyr_Flood_2.setVisible(true);lyr_Drought_3.setVisible(true);lyr_str_bta_4.setVisible(true);lyr_lu_bta_5.setVisible(true);lyr_bdy_bta_6.setVisible(true);
 var layersList = [lyr_GoogleMaps_0,lyr_GoogleSatellite_1,group_BTA];
