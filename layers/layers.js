@@ -83,11 +83,11 @@ var lyr_lu_bta_5 = new ol.layer.Vector({
                 popuplayertitle: 'lu_bta',
                 interactive: true,
     title: 'การใช้ประโยชน์ที่ดิน<br />\
-    <img src="styles/legend/lu_bta_5_0.png" /> A<br />\
-    <img src="styles/legend/lu_bta_5_1.png" /> F<br />\
-    <img src="styles/legend/lu_bta_5_2.png" /> M<br />\
-    <img src="styles/legend/lu_bta_5_3.png" /> U<br />\
-    <img src="styles/legend/lu_bta_5_4.png" /> W<br />' });
+    <img src="styles/legend/lu_bta_5_0.png" /> พื้นที่เกษตร<br />\
+    <img src="styles/legend/lu_bta_5_1.png" /> พื้นที่ป่า<br />\
+    <img src="styles/legend/lu_bta_5_2.png" /> พื้นที่เบ็ดเตล็ด<br />\
+    <img src="styles/legend/lu_bta_5_3.png" /> พื้นที่ชุมชนและสื่งปลูกสร้าง<br />\
+    <img src="styles/legend/lu_bta_5_4.png" /> พื้นที่น้ำ<br />' });
 var format_bdy_bta_6 = new ol.format.GeoJSON();
 var features_bdy_bta_6 = format_bdy_bta_6.readFeatures(json_bdy_bta_6, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:32647'});
